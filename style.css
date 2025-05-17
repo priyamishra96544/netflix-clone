@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poopins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #000000;
+}
+.main{
+    background-image: url('assets/images/banner.jpg');
+    height: 100vh;
+    position:relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1300px, 100vh);
+}
+
+.main .box{
+    width:100%;
+    height: 100vh;
+    opacity: 0.69;
+    position: absolute;
+    top:0;
+    background-color: #000000;
+}
+
+nav{
+    max-width:60vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    z-index: 10;
+    position: relative;
+    width: 120px;
+}
+nav button {
+    z-index: 10;
+    position: relative;
+}
+.hero{
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Martel Sans', sans-serif;
+    gap:23px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero> :nth-child(2){
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px
+}
+.hero input{
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 400px;
+    font-size: 16px;
+    margin-right: 10px
+}
+
+.separation{
+    position: relative;
+    height: 80px;
+    background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1920 80' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'><path d='M0,40 C480,0 1440,0 1920,40 L1920,80 L0,80 Z' fill='black'/><path d='M0,40 C480,0 1440,0 1920,40' stroke='url(%23grad1)' stroke-width='4' fill='none'/><defs><linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'><stop offset='0%' style='stop-color:%23ff0080;stop-opacity:1' /><stop offset='100%' style='stop-color:%23ff0080;stop-opacity:1' /></linearGradient></defs></svg>") no-repeat;
+    background-size: cover;
+}
+.email-details{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background: white;
+}
+
+.btn-red{
+    padding: 20px;
+    background: red;
+    border: red;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.btn-red-sm{
+    padding: 10px;
+    background: red;
+    border: red;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  background: #000;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(300px * 10); /* image width × total images */
+  animation: scroll 50s linear infinite;
+}
+
+.slide {
+  width: 200px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Animation keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reasons{
+    width: 80%;
+    margin: 30px auto;
+    color:#ffffff;
+}
+.reason-box{
+   display: flex; 
+   justify-content: space-between;
+   margin-top: 10px;
+   gap: 23px;
+}
+.box1{
+    background: linear-gradient(180deg, #141e30 0%, #2a0944 100%);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.box1 p{
+    margin-top: 10px
+}
+
+.box1 .fa-solid{
+    color: #a008b4;
+    font-size: 40px;
+    margin-left: auto;
+}
+
+
+.faq{
+    width: 80%;
+    margin: 30px auto;
+    color: #ffffff;
+}
+.faq-container{
+    background-color:#282828;
+    color: #ffffff;
+    padding: 20px; 
+    margin-top: 10px;
+}
+.faq-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    color: #dedbdb;
+    font-size: 18px;
+    width: 80%;
+    margin: 30px auto;
+}
+footer a{
+    color: #dedbdb;
+}
+footer .footer-cols{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+footer .cols-list{
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+}
+.cols-list a{
+    color: #dedbdb;
+    padding: 8px 0;
+}
+
+.btn-eng{
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.netflix{
+    color: #dedbdb;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    font-size: 14px;
+}
+
+/* Responsive CSS for different screen sizes */
+
+/* Large tablets and small desktops */
+@media screen and (max-width: 1200px) {
+    nav {
+        max-width: 80vw;
+    }
+    
+    .reason-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .box1 {
+        width: calc(50% - 30px);
+    }
+}
+
+/* Tablets and small laptops */
+@media screen and (max-width: 992px) {
+    .hero > :first-child {
+        font-size: 48px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 20px;
+    }
+    
+    .email-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .hero input {
+        width: 100%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+    
+    .btn-red {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    footer .footer-cols {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    footer .cols-list {
+        width: calc(50% - 15px);
+    }
+}
+
+/* Medium tablets */
+@media screen and (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+        padding: 0 10px;
+    }
+    
+    .hero > :first-child {
+        font-size: 36px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 18px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .slider {
+        width: 90%;
+    }
+    
+    .reasons, .faq {
+        width: 90%;
+    }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 576px) {
+    nav {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    nav img {
+        width: 80px;
+    }
+    
+    .btn-eng {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    .btn-red-sm {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    
+    .hero > :first-child {
+        font-size: 28px;
+    }
+    
+    .hero > :nth-child(2) {
+        font-size: 16px;
+    }
+    
+    .main {
+        background-size: cover;
+    }
+    
+    .slider {
+        height: 200px;
+    }
+    
+    .slide {
+        width: 150px;
+    }
+    
+    .faq-container {
+        padding: 15px;
+    }
+    
+    footer {
+        width: 90%;
+        font-size: 16px;
+    }
+    
+    footer .footer-cols {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    footer .cols-list {
+        width: 100%;
+    }
+    
+    .netflix {
+        margin-bottom: 80px;
+    }
+}
+
+/* Very small mobile screens */
+@media screen and (max-width: 320px) {
+    .hero > :first-child {
+        font-size: 24px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    .hero input, .btn-red {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
